@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body {background-color: black;}
+pre {
+	font-weight: normal;
+	color: #bbb;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+b {font-weight: normal}
+b.BOLD {color: #fff}
+b.ITA {font-style: italic}
+b.UND {text-decoration: underline}
+b.STR {text-decoration: line-through}
+b.UNDSTR {text-decoration: underline line-through}
+b.BLK {color: #000000}
+b.RED {color: #aa0000}
+b.GRN {color: #00aa00}
+b.YEL {color: #aa5500}
+b.BLU {color: #0000aa}
+b.MAG {color: #aa00aa}
+b.CYN {color: #00aaaa}
+b.WHI {color: #aaaaaa}
+b.HIK {color: #555555}
+b.HIR {color: #ff5555}
+b.HIG {color: #55ff55}
+b.HIY {color: #ffff55}
+b.HIB {color: #5555ff}
+b.HIM {color: #ff55ff}
+b.HIC {color: #55ffff}
+b.HIW {color: #ffffff}
+b.BBLK {background-color: #000000}
+b.BRED {background-color: #aa0000}
+b.BGRN {background-color: #00aa00}
+b.BYEL {background-color: #aa5500}
+b.BBLU {background-color: #0000aa}
+b.BMAG {background-color: #aa00aa}
+b.BCYN {background-color: #00aaaa}
+b.BWHI {background-color: #aaaaaa}
+</style>
+</head>
+<body>
+<pre><b class=YEL>Creating Trie:</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>$</b><b class=YEL> - </b><b class=YEL>0</b><b class=YEL> ke: </b><b class=YEL>n</b><b class=YEL> - </b><b class=YEL>1</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>n</b><b class=YEL> - </b><b class=YEL>1</b><b class=YEL> ke: </b><b class=YEL>a</b><b class=YEL> - </b><b class=YEL>2</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>a</b><b class=YEL> - </b><b class=YEL>2</b><b class=YEL> ke: </b><b class=YEL>b</b><b class=YEL> - </b><b class=YEL>3</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>n</b><b class=YEL> - </b><b class=YEL>1</b><b class=YEL> ke: </b><b class=YEL>b</b><b class=YEL> - </b><b class=YEL>4</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>b</b><b class=YEL> - </b><b class=YEL>4</b><b class=YEL> ke: </b><b class=YEL>a</b><b class=YEL> - </b><b class=YEL>5</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>n</b><b class=YEL> - </b><b class=YEL>1</b><b class=YEL> ke: </b><b class=YEL>e</b><b class=YEL> - </b><b class=YEL>6</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>e</b><b class=YEL> - </b><b class=YEL>6</b><b class=YEL> ke: </b><b class=YEL>t</b><b class=YEL> - </b><b class=YEL>7</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>t</b><b class=YEL> - </b><b class=YEL>7</b><b class=YEL> ke: </b><b class=YEL>b</b><b class=YEL> - </b><b class=YEL>8</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>b</b><b class=YEL> - </b><b class=YEL>8</b><b class=YEL> ke: </b><b class=YEL>a</b><b class=YEL> - </b><b class=YEL>9</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>a</b><b class=YEL> - </b><b class=YEL>9</b><b class=YEL> ke: </b><b class=YEL>l</b><b class=YEL> - </b><b class=YEL>10</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>l</b><b class=YEL> - </b><b class=YEL>10</b><b class=YEL> ke: </b><b class=YEL>l</b><b class=YEL> - </b><b class=YEL>11</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>a</b><b class=YEL> - </b><b class=YEL>9</b><b class=YEL> ke: </b><b class=YEL>n</b><b class=YEL> - </b><b class=YEL>12</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>n</b><b class=YEL> - </b><b class=YEL>12</b><b class=YEL> ke: </b><b class=YEL>k</b><b class=YEL> - </b><b class=YEL>13</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>b</b><b class=YEL> - </b><b class=YEL>8</b><b class=YEL> ke: </b><b class=YEL>e</b><b class=YEL> - </b><b class=YEL>14</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>e</b><b class=YEL> - </b><b class=YEL>14</b><b class=YEL> ke: </b><b class=YEL>a</b><b class=YEL> - </b><b class=YEL>15</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>a</b><b class=YEL> - </b><b class=YEL>15</b><b class=YEL> ke: </b><b class=YEL>n</b><b class=YEL> - </b><b class=YEL>16</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>n</b><b class=YEL> - </b><b class=YEL>16</b><b class=YEL> ke: </b><b class=YEL>s</b><b class=YEL> - </b><b class=YEL>17</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>t</b><b class=YEL> - </b><b class=YEL>7</b><b class=YEL> ke: </b><b class=YEL>f</b><b class=YEL> - </b><b class=YEL>18</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>f</b><b class=YEL> - </b><b class=YEL>18</b><b class=YEL> ke: </b><b class=YEL>l</b><b class=YEL> - </b><b class=YEL>19</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>l</b><b class=YEL> - </b><b class=YEL>19</b><b class=YEL> ke: </b><b class=YEL>i</b><b class=YEL> - </b><b class=YEL>20</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>i</b><b class=YEL> - </b><b class=YEL>20</b><b class=YEL> ke: </b><b class=YEL>x</b><b class=YEL> - </b><b class=YEL>21</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>t</b><b class=YEL> - </b><b class=YEL>7</b><b class=YEL> ke: </b><b class=YEL>w</b><b class=YEL> - </b><b class=YEL>22</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>w</b><b class=YEL> - </b><b class=YEL>22</b><b class=YEL> ke: </b><b class=YEL>o</b><b class=YEL> - </b><b class=YEL>23</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>o</b><b class=YEL> - </b><b class=YEL>23</b><b class=YEL> ke: </b><b class=YEL>r</b><b class=YEL> - </b><b class=YEL>24</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>r</b><b class=YEL> - </b><b class=YEL>24</b><b class=YEL> ke: </b><b class=YEL>k</b><b class=YEL> - </b><b class=YEL>25</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>e</b><b class=YEL> - </b><b class=YEL>6</b><b class=YEL> ke: </b><b class=YEL>w</b><b class=YEL> - </b><b class=YEL>26</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>w</b><b class=YEL> - </b><b class=YEL>26</b><b class=YEL> ke: </b><b class=YEL>s</b><b class=YEL> - </b><b class=YEL>27</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>n</b><b class=YEL> - </b><b class=YEL>1</b><b class=YEL> ke: </b><b class=YEL>g</b><b class=YEL> - </b><b class=YEL>28</b>
+<b class=YEL>Membuat node dari </b><b class=YEL>g</b><b class=YEL> - </b><b class=YEL>28</b><b class=YEL> ke: </b><b class=YEL>v</b><b class=YEL> - </b><b class=YEL>29</b>
+<b class=GRN>DFS Childrens:</b>
+<b class=GRN>Children </b><b class=GRN>3</b><b class=GRN> </b><b class=GRN>8</b>
+<b class=GRN>Children </b><b class=GRN>5</b><b class=GRN> </b><b class=GRN>6</b>
+<b class=GRN>Children </b><b class=GRN>11</b><b class=GRN> </b><b class=GRN>3</b>
+<b class=GRN>Children </b><b class=GRN>13</b><b class=GRN> </b><b class=GRN>8</b>
+<b class=GRN>Children </b><b class=GRN>17</b><b class=GRN> </b><b class=GRN>4</b>
+<b class=GRN>Children </b><b class=GRN>21</b><b class=GRN> </b><b class=GRN>7</b>
+<b class=GRN>Children </b><b class=GRN>25</b><b class=GRN> </b><b class=GRN>1</b>
+<b class=GRN>Children </b><b class=GRN>27</b><b class=GRN> </b><b class=GRN>6</b>
+<b class=GRN>Children </b><b class=GRN>29</b><b class=GRN> </b><b class=GRN>9</b>
+<b class=BLU>Frequency Table:</b>
+<b class=BLU>8</b><b class=BLU> </b><b class=BLU>6</b><b class=BLU> </b><b class=BLU>3</b><b class=BLU> </b><b class=BLU>8</b><b class=BLU> </b><b class=BLU>4</b><b class=BLU> </b><b class=BLU>7</b><b class=BLU> </b><b class=BLU>1</b><b class=BLU> </b><b class=BLU>6</b><b class=BLU> </b><b class=BLU>9</b><b class=BLU>
+</b><b class=RED>RMQ Table:</b>
+<b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>8</b><b class=RED> </b>
+<b class=RED>0</b><b class=RED> </b><b class=RED>1</b><b class=RED> </b><b class=RED>1</b><b class=RED> </b><b class=RED>3</b><b class=RED> </b><b class=RED>3</b><b class=RED> </b><b class=RED>3</b><b class=RED> </b><b class=RED>3</b><b class=RED> </b><b class=RED>3</b><b class=RED> </b><b class=RED>8</b><b class=RED> </b>
+<b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>2</b><b class=RED> </b><b class=RED>3</b><b class=RED> </b><b class=RED>3</b><b class=RED> </b><b class=RED>3</b><b class=RED> </b><b class=RED>3</b><b class=RED> </b><b class=RED>3</b><b class=RED> </b><b class=RED>8</b><b class=RED> </b>
+<b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>3</b><b class=RED> </b><b class=RED>3</b><b class=RED> </b><b class=RED>3</b><b class=RED> </b><b class=RED>3</b><b class=RED> </b><b class=RED>3</b><b class=RED> </b><b class=RED>8</b><b class=RED> </b>
+<b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>4</b><b class=RED> </b><b class=RED>5</b><b class=RED> </b><b class=RED>5</b><b class=RED> </b><b class=RED>5</b><b class=RED> </b><b class=RED>8</b><b class=RED> </b>
+<b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>5</b><b class=RED> </b><b class=RED>5</b><b class=RED> </b><b class=RED>5</b><b class=RED> </b><b class=RED>8</b><b class=RED> </b>
+<b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>6</b><b class=RED> </b><b class=RED>7</b><b class=RED> </b><b class=RED>8</b><b class=RED> </b>
+<b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>7</b><b class=RED> </b><b class=RED>8</b><b class=RED> </b>
+<b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>0</b><b class=RED> </b><b class=RED>8</b><b class=RED> </b>
+<b class=MAG>Dapat range:</b>
+<b class=MAG>2</b><b class=MAG> </b><b class=MAG>6</b>
+<b class=MAG>Frequency debug: </b>
+<b class=MAG>3</b><b class=MAG> </b><b class=MAG>8</b><b class=MAG> </b><b class=MAG>4</b><b class=MAG> </b><b class=MAG>7</b><b class=MAG> </b><b class=MAG>1</b><b class=MAG> </b>
+
+<b class=YEL>Iterasi ke-</b><b class=YEL>1</b><b class=YEL>:</b>
+<b class=YEL>range: </b><b class=YEL>2</b><b class=YEL> </b><b class=YEL>6</b>
+<b class=YEL>index best: </b><b class=YEL>3</b>
+<b class=YEL>index value: </b><b class=YEL>3</b>
+<b class=YEL>Splitting ...</b>
+<b class=YEL>push </b><b class=YEL>2</b><b class=YEL> </b><b class=YEL>2</b>
+<b class=YEL>push </b><b class=YEL>4</b><b class=YEL> </b><b class=YEL>6</b>
+
+<b class=YEL>Iterasi ke-</b><b class=YEL>2</b><b class=YEL>:</b>
+<b class=YEL>range: </b><b class=YEL>4</b><b class=YEL> </b><b class=YEL>6</b>
+<b class=YEL>index best: </b><b class=YEL>5</b>
+<b class=YEL>index value: </b><b class=YEL>5</b>
+<b class=YEL>Splitting ...</b>
+<b class=YEL>push </b><b class=YEL>4</b><b class=YEL> </b><b class=YEL>4</b>
+<b class=YEL>push </b><b class=YEL>6</b><b class=YEL> </b><b class=YEL>6</b>
+
+<b class=YEL>Iterasi ke-</b><b class=YEL>3</b><b class=YEL>:</b>
+<b class=YEL>range: </b><b class=YEL>6</b><b class=YEL> </b><b class=YEL>6</b>
+<b class=YEL>index best: </b><b class=YEL>6</b>
+<b class=YEL>index value: </b><b class=YEL>6</b>
+<b class=YEL>Splitting ...</b>
+Hasil query "net" - 3
+netbank
+netflix
+network
+</pre>
+</body>
+</html>
